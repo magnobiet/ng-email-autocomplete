@@ -1,0 +1,22 @@
+{
+  "name": "ng-email-autocomplete",
+  "authors": [
+    "Magno Biét <magno.biet@gmail.com>"
+  ],
+  "description": "A AngularJS directive that suggests and autocompletes the domain in email fields.",
+  "main": "src/ng-email-autocomplete.js",
+  "license": "MIT",
+  "homepage": "https://github.com/magnobiet/ng-email-autocomplete",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "email-autocomplete": "^0.1.1",
+    "angular": "^1.5.8"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html data-ng-app="DemoApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ng-email-autocomplete</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style>
+			body {
+				padding-top: 80px;
+			}
+			.navbar-brand {
+				margin: 0;
+			}
+			.eac-sugg {
+				color: #ccc;
+			}
+			.email-suggestion {
+				color: #337ab7;
+			}
+		</style>
+	</head>
+	<body>
+
+		<header>
+
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+
+				<div class="container">
+
+					<div class="navbar-header">
+
+						<h1 class="navbar-brand">ng-email-autocomplete</h1>
+
+					</div>
+
+				</div>
+
+			</nav>
+
+		</header>
+
+		<main data-ng-controller="DemoController">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-4 col-md-offset-4">
+
+						<form role="form" autocomplete="off">
+
+							<fieldset>
+
+								<div class="form-group">
+									<label for="exampleInputEmail1">Default list</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" data-ng-model="vm.email" data-email-autocomplete data-suggestion-class="email-suggestion">
+								</div>
+
+								<div class="form-group">
+									<label for="exampleInputEmail2">List from scope variable</label>
+									<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" data-ng-model="vm.email2" data-email-autocomplete data-domains="domainsList">
+								</div>
+
+								<div class="form-group">
+									<label for="exampleInputEmail3">List from inline string</label>
+									<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" data-ng-model="vm.email3" data-email-autocomplete data-domains="['example.org']">
+								</div>
+
+							</fieldset>
+
+						</form>
+
+						<hr>
+
+						<pre class="well">{{ vm | json }}</pre>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</main>
+
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="../bower_components/email-autocomplete/dist/jquery.email-autocomplete.js"></script>
+
+		<script src="../src/ng-email-autocomplete.js"></script>
+		<script src="demo.js"></script>
+
+	</body>
+</html>
