@@ -17,7 +17,7 @@ Smarter email fields for a better UX.
 ### Installation
 
 ```bash
-bower install --save https://github.com/magnobiet/ng-email-autocomplete.git
+bower install --save ng-email-autocomplete
 ```
 
 ### Usage
