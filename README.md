@@ -4,7 +4,7 @@ Smarter email fields for a better UX.
 
 [DEMO](https://git.io/vPWCB)
 
-![Preview](preview.png)
+![Preview](https://raw.githubusercontent.com/magnobiet/ng-email-autocomplete/master/preview.png)
 
 ## Requirements
 
