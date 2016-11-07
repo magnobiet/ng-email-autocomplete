@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>AngularJS Email Autocomplete by magnobiet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">AngularJS Email Autocomplete</h1>
+      <h2 class="project-tagline">A AngularJS directive that suggests and autocompletes the domain in email fields</h2>
+      <a href="https://github.com/magnobiet/ng-email-autocomplete" class="btn">View on GitHub</a>
+      <a href="https://github.com/magnobiet/ng-email-autocomplete/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/magnobiet/ng-email-autocomplete/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="ng-email-autocomplete-" class="anchor" href="#ng-email-autocomplete-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ng-email-autocomplete <a href="https://magno.mit-license.org/2016"><img src="https://img.shields.io/badge/licence-MIT-blue.svg" alt="MIT Licence"></a>
+</h1>
+
+<p>Smarter email fields for a better UX.</p>
+
+<p><a href="https://git.io/vPWCB">DEMO</a></p>
+
+<p><img src="preview.png" alt="Preview"></p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h2>
+
+<ul>
+<li><a href="https://github.com/angular/angular.js">AngularJS</a></li>
+<li><a href="https://github.com/jquery/jquery">jQuery</a></li>
+<li><a href="https://github.com/10w042/email-autocomplete">jQuery Email Autocomplete</a></li>
+</ul>
+
+<h2>
+<a id="tldr" class="anchor" href="#tldr" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TL;DR</h2>
+
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+
+<div class="highlight highlight-source-shell"><pre>bower install --save https://github.com/magnobiet/ng-email-autocomplete.git</pre></div>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/path/to/jquery.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/path/to/jquery.email-autocomplete.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/path/to/angular.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>/path/to/ng-email-autocomplete.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<div class="highlight highlight-source-js"><pre>angular
+    .<span class="pl-en">module</span>(<span class="pl-s"><span class="pl-pds">'</span>AppName<span class="pl-pds">'</span></span>, [
+        <span class="pl-s"><span class="pl-pds">'</span>ngEmailAutocomplete<span class="pl-pds">'</span></span>
+    ]);</pre></div>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">input</span>
+    <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>email<span class="pl-pds">"</span></span>
+    <span class="pl-e">data-ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>vm.email<span class="pl-pds">"</span></span>
+    <span class="pl-e">data-email-autocomplete</span>
+    <span class="pl-e">data-suggestion-class</span>=<span class="pl-s"><span class="pl-pds">"</span>email-suggestion<span class="pl-pds">"</span></span>
+    <span class="pl-e">data-domains</span>=<span class="pl-s"><span class="pl-pds">"</span>['example.org']<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-e">.email-suggestion</span> {
+    <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">#ccc</span>;
+}</pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>This package is licensed under the <a href="https://magno.mit-license.org/2016">MIT license</a>. Copyright © Magno Biét</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/magnobiet/ng-email-autocomplete">AngularJS Email Autocomplete</a> is maintained by <a href="https://github.com/magnobiet">magnobiet</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
