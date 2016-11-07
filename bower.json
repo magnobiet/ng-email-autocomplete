@@ -7,6 +7,10 @@
   "main": "src/ng-email-autocomplete.js",
   "license": "MIT",
   "homepage": "https://github.com/magnobiet/ng-email-autocomplete",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magnobiet/ng-email-autocomplete.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",
