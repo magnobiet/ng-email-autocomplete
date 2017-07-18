@@ -36,7 +36,7 @@
 				.element(element)
 				.emailautocomplete({
 					suggClass: attrs.suggClass || 'email-suggestion',
-					domains: (attrs.domains ? angular.merge(domainsList, scope.domains) : domainsList)
+					domains: (attrs.domains ? _.merge(domainsList, scope.domains) : domainsList)
 				})
 				.on('blur', function(event) {
 
